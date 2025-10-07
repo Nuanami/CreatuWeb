@@ -3,21 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nicolás Daguerre - Professional Freelancer</title>
+    <meta name="description" content="CreaTuWeb - Diseño y desarrollo de páginas web modernas, rápidas y adaptadas a dispositivos móviles. Planes desde US$149.">
+    <meta name="keywords" content="diseño web, desarrollo web, páginas web, landing page, responsive, SEO, Uruguay">
+    <meta name="author" content="CreaTuWeb">
+
+    <title>CreaTuWeb</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="img/Logo.webp">
+    
+
 </head>
 <body>
     <!-- Navigation Bar with Logo and Menu Items -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo"><a href="#hero"><img src="img/Logo.png""></a></div>
+            <div class="nav-logo"><a href="#hero"><img src="img/Logo.webp" alt="Logo"></a></div>
             <ul class="nav-menu">
                 <li><a href="#hero">Inicio</a></li>
                 <li><a href="#projects">Projectos</a></li>
                 <li><a href="#plans">Planes</a></li>
                 <li><a href="#contact">Contacto</a></li>
             </ul>
-            <div class="nav-toggle" id="navToggle">
+            <div class="nav-toggle" id="navToggle" aria-label="Abrir menú de navegación" role="button" tabindex="0">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -41,7 +48,7 @@
             <div class="carousel" id="carousel">
                 <div class="project-card" data-url="https://bocetoinm.netlify.app">
                     <div class="project-image">
-                        <img src="img/Web1.png" alt="Inmobiliaria">
+                        <img src="img/Web1.webp" alt="Inmobiliaria">
                     </div>
                     <h3>Inmobiliaria</h3>
                     <p>Inmobiliaria completa con todas las funicones necesarias</p>
@@ -49,19 +56,19 @@
                 </div>
                 <div class="project-card" data-url="https://bocetoinm.netlify.app">
                     <div class="project-image">
-                        <img src="img/Web1.1.png" alt="Inmobiliaria">
+                        <img src="img/Web1.1.webp" alt="Inmobiliaria">
                     </div>
                     <h3>Inmobiliaria</h3>
                     <p>Inmobiliaria completa con todas las funicones necesarias</p>
                     <a href="https://bocetoinm.netlify.app" target="_blank" class="project-link">Ver proyecto →</a>
                 </div>
-                <div class="project-card" data-url="https://bocetoporta.netlify.app">
+                <div class="project-card" data-url="https://creatuweb.vercel.app">
                     <div class="project-image">
-                        <img src="img/Web2.png" alt="Inmobiliaria">
+                        <img src="img/Web2.webp" alt="Freelancer">
                     </div>
                     <h3>Portafolio</h3>
                     <p>Portafolio de venda de servicios</p>
-                    <a href="https://bocetoporta.netlify.app" target="_blank" class="project-link">Ver proyecto →</a>
+                    <a href="https://creatuweb.vercel.app" target="_blank" class="project-link">Ver proyecto →</a>
                 </div>
             </div>
             <div class="carousel-nav prev" onclick="moveCarousel(-1)">‹</div>
@@ -70,9 +77,9 @@
         <div class="carousel-dots" id="carouselDots"></div>
     </section>
 
-        <!-- Why Choose Us Section -->
+    <!-- Why Choose Us Section -->
     <section id="why-choose-us">
-        <h2 class="section-title">Por Qué Elegirnos</h2>
+        <h2 class="section-title">Porque Elegirnos</h2>
         <div class="features-grid">
             <div class="feature-card">
                 <div class="feature-icon">
@@ -184,25 +191,69 @@
         </div>
     </section>
 
+    <!-- Timeline -->
+    <section class="timeline">
+        <h2>Proceso de Trabajo</h2>
+        <div class="timeline-container">
+
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3>Contacto y análisis</h3>
+                <p>Conversamos sobre tu negocio, tus objetivos y lo que esperás de tu sitio web.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3>Propuesta</h3>
+                <p>Analizamos tus objetivos y creamos una propuesta a medida con el diseño y funcionalidades que tu negocio necesita.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3>Diseño y desarrollo</h3>
+                <p>Diseñamos un sitio web moderno, funcional y adaptado a dispositivos móviles.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3>Revisión y ajustes</h3>
+                <p>Te mostramos el avance y realizamos ajustes hasta que todo quede perfecto.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3>Entrega final y soporte</h3>
+                <p>Publicamos tu web y te brindo soporte técnico o mantenimiento si lo necesitás.</p>
+            </div>
+        </div>
+
+    </div>
+    </section>
+
+
     <!-- Contact Form -->
     <section id="contact">
         <h2 class="section-title">Contacto</h2>
         <form class="contact-form" action="https://formspree.io/f/movklngj" method="POST">
             <div class="form-group">
                 <label for="name">Nombre</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" required aria-required="true">
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" required aria-required="true">
             </div>
             <div class="form-group">
                 <label for="telefono">Telefono</label>
-                <input type="tel" id="tel" name="tel" required>
+                <input type="tel" id="tel" name="tel" required aria-required="true">
             </div>
             <div class="form-group">
                 <label for="message">Mensaje</label>
-                <textarea id="message" name="message" required></textarea>
+                <textarea id="message" name="message" required aria-required="true"></textarea>
             </div>
             <button type="submit" class="btnCont">Enviar</button>
         </form>
@@ -212,7 +263,7 @@
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h3>Quick Links</h3>
+                <h3>Navegación</h3>
                 <ul>
                     <li><a href="#projects">Proyectos</a></li>
                     <li><a href="#plans">Planes</a></li>
@@ -222,9 +273,9 @@
             <div class="footer-section">
                 <h3>Redes Sociales</h3>
                 <div class="social-links">
-                    <a href="https://linkedin.com/in/your-profile" target="_blank" title="LinkedIn"><svg fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-204.8 -204.8 921.60 921.60" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="7935ec95c421cee6d86eb22ecd125aef"> <path style="display: inline; fill-rule: evenodd; clip-rule: evenodd;" d="M116.504,500.219V170.654H6.975v329.564H116.504 L116.504,500.219z M61.751,125.674c38.183,0,61.968-25.328,61.968-56.953c-0.722-32.328-23.785-56.941-61.252-56.941 C24.994,11.781,0.5,36.394,0.5,68.722c0,31.625,23.772,56.953,60.53,56.953H61.751L61.751,125.674z M177.124,500.219 c0,0,1.437-298.643,0-329.564H286.67v47.794h-0.727c14.404-22.49,40.354-55.533,99.44-55.533 c72.085,0,126.116,47.103,126.116,148.333v188.971H401.971V323.912c0-44.301-15.848-74.531-55.497-74.531 c-30.254,0-48.284,20.38-56.202,40.08c-2.897,7.012-3.602,16.861-3.602,26.711v184.047H177.124L177.124,500.219z"> </path> </g> </g></svg></a>
+                    <a href="https://linkedin.com/in/nicolás-daguerre" target="_blank" title="LinkedIn"><svg fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-204.8 -204.8 921.60 921.60" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="7935ec95c421cee6d86eb22ecd125aef"> <path style="display: inline; fill-rule: evenodd; clip-rule: evenodd;" d="M116.504,500.219V170.654H6.975v329.564H116.504 L116.504,500.219z M61.751,125.674c38.183,0,61.968-25.328,61.968-56.953c-0.722-32.328-23.785-56.941-61.252-56.941 C24.994,11.781,0.5,36.394,0.5,68.722c0,31.625,23.772,56.953,60.53,56.953H61.751L61.751,125.674z M177.124,500.219 c0,0,1.437-298.643,0-329.564H286.67v47.794h-0.727c14.404-22.49,40.354-55.533,99.44-55.533 c72.085,0,126.116,47.103,126.116,148.333v188.971H401.971V323.912c0-44.301-15.848-74.531-55.497-74.531 c-30.254,0-48.284,20.38-56.202,40.08c-2.897,7.012-3.602,16.861-3.602,26.711v184.047H177.124L177.124,500.219z"> </path> </g> </g></svg></a>
                     <a href="https://github.com/Nuanami" target="_blank" title="GitHub"><svg viewBox="-28.8 -28.8 249.60 249.60" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" d="M120.755 170c.03-4.669.059-20.874.059-27.29 0-9.272-3.167-15.339-6.719-18.41 22.051-2.464 45.201-10.863 45.201-49.067 0-10.855-3.824-19.735-10.175-26.683 1.017-2.516 4.413-12.63-.987-26.32 0 0-8.296-2.672-27.202 10.204-7.912-2.213-16.371-3.308-24.784-3.352-8.414.044-16.872 1.14-24.785 3.352C52.457 19.558 44.162 22.23 44.162 22.23c-5.4 13.69-2.004 23.804-.987 26.32C36.824 55.498 33 64.378 33 75.233c0 38.204 23.149 46.603 45.2 49.067-3.551 3.071-6.719 9.138-6.719 18.41 0 6.416.03 22.621.059 27.29M27 130c9.939.703 15.67 9.735 15.67 9.735 8.834 15.199 23.178 10.803 28.815 8.265"></path></g></svg></a>
-                    <a href="https://twitter.com/your-username" target="_blank" title="Twitter"><svg fill="#ffffff" viewBox="-576 -576 3072.00 3072.00" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M1643.825 518.606c-14.457 11.294-22.588 28.8-21.685 47.096.565 16.377 1.017 32.753 1.017 49.355 0 530.372-373.497 1079.153-998.513 1079.153-122.203 0-242.598-24.282-355.765-71.153 136.433-22.588 266.428-82.447 374.965-173.816 17.957-15.247 24.62-39.868 16.828-62.005-7.793-22.136-28.574-37.157-52.179-37.722-105.374-2.146-200.81-62.682-256.376-157.214 38.06-1.13 79.059-7.116 109.779-16.038 24.847-7.228 41.562-30.381 40.771-56.132-.903-25.863-19.2-47.774-44.499-53.308-112.15-24.282-194.71-116.781-222.607-243.84 32.076 6.438 62.344 8.47 79.06 8.922 24.62 2.711 47.322-14.456 55.453-38.06 8.02-23.492-.226-49.582-20.442-64.151-78.042-56.245-161.619-161.167-161.619-286.42 0-30.832 3.84-61.326 11.181-90.804 195.163 217.186 461.478 348.31 743.83 363.558 18.975 1.016 34.674-6.438 46.08-19.765 11.408-13.327 15.926-31.398 12.312-48.565-5.648-25.637-8.471-52.178-8.471-79.058 0-188.951 141.063-342.664 314.428-342.664 87.19 0 168.283 37.835 228.141 106.73 13.327 15.36 34.334 22.475 54.212 18.183 28.687-6.099 56.922-13.779 84.706-23.153-16.49 16.715-34.673 31.624-54.438 44.386-22.25 14.343-31.51 42.014-22.475 66.861s34.56 39.868 60.31 36.593c14.683-1.92 29.252-4.179 43.709-7.002-18.297 17.731-37.497 34.447-57.713 50.033m261.685-199.68c-16.716-18.636-43.596-23.83-66.41-13.214-4.066 1.92-8.132 3.84-12.31 5.76 17.054-30.269 30.946-62.683 40.997-96.678 6.777-22.588-1.242-46.984-20.103-61.214-18.974-14.118-44.5-15.247-64.49-2.485-58.277 37.384-120.96 64.828-186.466 82.108-78.268-76.8-181.948-120.17-289.355-120.17-235.595 0-427.37 204.424-427.37 455.606 0 9.487.227 18.974.791 28.348C626 564.008 390.517 424.977 226.64 208.469c-11.52-15.247-30.155-23.04-49.242-22.136-19.2 1.468-36.367 12.536-45.516 29.477-37.157 68.894-56.809 147.614-56.809 227.464 0 86.626 28.687 165.007 70.25 230.739-19.426 9.035-32.98 28.574-32.98 51.388v5.195c0 139.821 49.808 261.91 133.497 344.47-9.035 2.937-17.28 8.246-23.943 15.36a56.566 56.566 0 0 0-12.537 54.326c40.772 136.997 137.788 242.145 258.41 289.807-122.88 69.571-268.688 97.129-404.443 80.753-26.541-3.953-50.485 11.858-59.633 36.028-9.261 24.282-.677 51.84 20.781 66.522 179.69 123.784 387.276 189.29 600.17 189.29 695.717 0 1111.454-606.156 1111.454-1192.095 0-8.583-.113-17.054-.339-25.524 68.555-57.149 127.51-125.365 175.737-203.069 13.214-21.345 10.842-48.903-5.986-67.538" fill-rule="evenodd"></path> </g></svg></a>
+                    <a href="https://x.com/NicoDag__" target="_blank" title="Twitter"><svg fill="#ffffff" viewBox="-576 -576 3072.00 3072.00" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M1643.825 518.606c-14.457 11.294-22.588 28.8-21.685 47.096.565 16.377 1.017 32.753 1.017 49.355 0 530.372-373.497 1079.153-998.513 1079.153-122.203 0-242.598-24.282-355.765-71.153 136.433-22.588 266.428-82.447 374.965-173.816 17.957-15.247 24.62-39.868 16.828-62.005-7.793-22.136-28.574-37.157-52.179-37.722-105.374-2.146-200.81-62.682-256.376-157.214 38.06-1.13 79.059-7.116 109.779-16.038 24.847-7.228 41.562-30.381 40.771-56.132-.903-25.863-19.2-47.774-44.499-53.308-112.15-24.282-194.71-116.781-222.607-243.84 32.076 6.438 62.344 8.47 79.06 8.922 24.62 2.711 47.322-14.456 55.453-38.06 8.02-23.492-.226-49.582-20.442-64.151-78.042-56.245-161.619-161.167-161.619-286.42 0-30.832 3.84-61.326 11.181-90.804 195.163 217.186 461.478 348.31 743.83 363.558 18.975 1.016 34.674-6.438 46.08-19.765 11.408-13.327 15.926-31.398 12.312-48.565-5.648-25.637-8.471-52.178-8.471-79.058 0-188.951 141.063-342.664 314.428-342.664 87.19 0 168.283 37.835 228.141 106.73 13.327 15.36 34.334 22.475 54.212 18.183 28.687-6.099 56.922-13.779 84.706-23.153-16.49 16.715-34.673 31.624-54.438 44.386-22.25 14.343-31.51 42.014-22.475 66.861s34.56 39.868 60.31 36.593c14.683-1.92 29.252-4.179 43.709-7.002-18.297 17.731-37.497 34.447-57.713 50.033m261.685-199.68c-16.716-18.636-43.596-23.83-66.41-13.214-4.066 1.92-8.132 3.84-12.31 5.76 17.054-30.269 30.946-62.683 40.997-96.678 6.777-22.588-1.242-46.984-20.103-61.214-18.974-14.118-44.5-15.247-64.49-2.485-58.277 37.384-120.96 64.828-186.466 82.108-78.268-76.8-181.948-120.17-289.355-120.17-235.595 0-427.37 204.424-427.37 455.606 0 9.487.227 18.974.791 28.348C626 564.008 390.517 424.977 226.64 208.469c-11.52-15.247-30.155-23.04-49.242-22.136-19.2 1.468-36.367 12.536-45.516 29.477-37.157 68.894-56.809 147.614-56.809 227.464 0 86.626 28.687 165.007 70.25 230.739-19.426 9.035-32.98 28.574-32.98 51.388v5.195c0 139.821 49.808 261.91 133.497 344.47-9.035 2.937-17.28 8.246-23.943 15.36a56.566 56.566 0 0 0-12.537 54.326c40.772 136.997 137.788 242.145 258.41 289.807-122.88 69.571-268.688 97.129-404.443 80.753-26.541-3.953-50.485 11.858-59.633 36.028-9.261 24.282-.677 51.84 20.781 66.522 179.69 123.784 387.276 189.29 600.17 189.29 695.717 0 1111.454-606.156 1111.454-1192.095 0-8.583-.113-17.054-.339-25.524 68.555-57.149 127.51-125.365 175.737-203.069 13.214-21.345 10.842-48.903-5.986-67.538" fill-rule="evenodd"></path> </g></svg></a>
                     <a href="https://instagram.com/nicodag__" target="_blank" title="Instagram"><svg fill="#ffffff" viewBox="-4.8 -4.8 41.60 41.60" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M20.445 5h-8.891A6.559 6.559 0 0 0 5 11.554v8.891A6.559 6.559 0 0 0 11.554 27h8.891a6.56 6.56 0 0 0 6.554-6.555v-8.891A6.557 6.557 0 0 0 20.445 5zm4.342 15.445a4.343 4.343 0 0 1-4.342 4.342h-8.891a4.341 4.341 0 0 1-4.341-4.342v-8.891a4.34 4.34 0 0 1 4.341-4.341h8.891a4.342 4.342 0 0 1 4.341 4.341l.001 8.891z"></path><path d="M16 10.312c-3.138 0-5.688 2.551-5.688 5.688s2.551 5.688 5.688 5.688 5.688-2.551 5.688-5.688-2.55-5.688-5.688-5.688zm0 9.163a3.475 3.475 0 1 1-.001-6.95 3.475 3.475 0 0 1 .001 6.95zM21.7 8.991a1.363 1.363 0 1 1-1.364 1.364c0-.752.51-1.364 1.364-1.364z"></path></g></svg></a>
                 </div>
             </div>
@@ -243,7 +294,7 @@
     </footer>
 
     <!-- WhatsApp Float Button -->
-    <a href="https://wa.me/+598098272842?text=Hola,%20Estoy%20interesado%20en%20tu%20trabajo" class="whatsapp-float" target="_blank" title="Contact via WhatsApp">
+    <a href="https://wa.me/+598098272842?text=Hola,%20Estoy%20interesado%20en%20tu%20trabajo" class="whatsapp-float" target="_blank" title="Contact via WhatsApp" aria-label="Contactar vía WhatsApp">
         <svg viewBox="0 0 32 32">
             <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 7.933-2.127c2.42 1.37 5.173 2.127 8.067 2.127 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.467c-2.482 0-4.908-0.646-7.07-1.87l-0.507-0.292-5.247 1.408 1.417-5.267-0.321-0.525c-1.331-2.197-2.039-4.722-2.039-7.321 0-7.605 6.195-13.8 13.8-13.8s13.8 6.195 13.8 13.8-6.228 13.867-13.833 13.867zM21.863 18.896c-0.326-0.163-1.926-0.951-2.224-1.060s-0.515-0.163-0.733 0.163c-0.217 0.326-0.842 1.060-1.031 1.278s-0.38 0.245-0.706 0.082c-0.326-0.163-1.376-0.507-2.621-1.62-0.969-0.865-1.623-1.933-1.812-2.259s-0.020-0.502 0.143-0.665c0.146-0.146 0.326-0.38 0.489-0.57s0.217-0.326 0.326-0.543 0.054-0.407-0.027-0.57c-0.082-0.163-0.733-1.765-1.005-2.417s-0.537-0.543-0.733-0.543c-0.19-0.009-0.407-0.009-0.624-0.009s-0.57 0.082-0.869 0.407c-0.299 0.326-1.141 1.114-1.141 2.716s1.168 3.151 1.33 3.368c0.163 0.217 2.293 3.504 5.554 4.915 0.777 0.337 1.384 0.538 1.857 0.689 0.78 0.245 1.491 0.21 2.052 0.127 0.626-0.094 1.926-0.788 2.198-1.547s0.272-1.411 0.19-1.547c-0.081-0.136-0.298-0.217-0.624-0.38z"/>
         </svg>

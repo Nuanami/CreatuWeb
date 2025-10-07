@@ -131,11 +131,6 @@ const plan2btn = document.querySelector(".btn2")
 const plan3btn = document.querySelector(".btn3")
 const planSelectedInput = document.querySelector("#message")
 
-console.log(plan1btn.textContent)
-console.log(plan2btn.textContent)
-console.log(plan3btn.textContent)
-console.log(planSelectedInput)
-
 plan1btn.addEventListener("click", planSelected);
 plan2btn.addEventListener("click", planSelected);
 plan3btn.addEventListener("click", planSelected);
